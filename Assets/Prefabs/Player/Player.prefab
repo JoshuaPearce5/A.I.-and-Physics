@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1743077064231521814}
   - component: {fileID: 2599299356645127717}
   - component: {fileID: 6677856656866631810}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SmokeEffect
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28,7 +28,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
   m_LocalPosition: {x: -0.61, y: 0.64, z: -0}
-  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 4240884822766087074}
@@ -41,7 +41,7 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 147890939954403063}
   serializedVersion: 8
-  lengthInSec: 0.3
+  lengthInSec: 0.5
   simulationSpeed: 1
   stopAction: 0
   cullingMode: 0
@@ -115,9 +115,9 @@ ParticleSystem:
     enabled: 1
     startLifetime:
       serializedVersion: 2
-      minMaxState: 0
-      scalar: 0.4
-      minScalar: 5
+      minMaxState: 3
+      scalar: 0.7
+      minScalar: 0.2
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -168,9 +168,9 @@ ParticleSystem:
         m_RotationOrder: 4
     startSpeed:
       serializedVersion: 2
-      minMaxState: 0
-      scalar: 2
-      minScalar: 5
+      minMaxState: 3
+      scalar: 1.5
+      minScalar: 1
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -221,9 +221,9 @@ ParticleSystem:
         m_RotationOrder: 4
     startColor:
       serializedVersion: 2
-      minMaxState: 0
-      minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 1, g: 1, b: 1, a: 1}
+      minMaxState: 2
+      minColor: {r: 0.33673015, g: 0.4433962, b: 0.39598906, a: 1}
+      maxColor: {r: 0, g: 0, b: 0, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -286,9 +286,9 @@ ParticleSystem:
         m_NumAlphaKeys: 2
     startSize:
       serializedVersion: 2
-      minMaxState: 0
-      scalar: 1
-      minScalar: 1
+      minMaxState: 3
+      scalar: 0.86
+      minScalar: 0.5
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -339,7 +339,7 @@ ParticleSystem:
         m_RotationOrder: 4
     startSizeY:
       serializedVersion: 2
-      minMaxState: 0
+      minMaxState: 3
       scalar: 1
       minScalar: 1
       maxCurve:
@@ -392,7 +392,7 @@ ParticleSystem:
         m_RotationOrder: 4
     startSizeZ:
       serializedVersion: 2
-      minMaxState: 0
+      minMaxState: 3
       scalar: 1
       minScalar: 1
       maxCurve:
@@ -445,7 +445,7 @@ ParticleSystem:
         m_RotationOrder: 4
     startRotationX:
       serializedVersion: 2
-      minMaxState: 0
+      minMaxState: 3
       scalar: 0
       minScalar: 0
       maxCurve:
@@ -498,7 +498,7 @@ ParticleSystem:
         m_RotationOrder: 4
     startRotationY:
       serializedVersion: 2
-      minMaxState: 0
+      minMaxState: 3
       scalar: 0
       minScalar: 0
       maxCurve:
@@ -551,8 +551,8 @@ ParticleSystem:
         m_RotationOrder: 4
     startRotation:
       serializedVersion: 2
-      minMaxState: 0
-      scalar: 0
+      minMaxState: 3
+      scalar: 6.283185
       minScalar: 0
       maxCurve:
         serializedVersion: 2
@@ -603,7 +603,7 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     randomizeRotationDirection: 0
-    gravitySource: 1
+    gravitySource: 0
     maxNumParticles: 1000
     customEmitterVelocity: {x: 0, y: 0, z: 0}
     size3D: 0
@@ -735,7 +735,7 @@ ParticleSystem:
     m_Mesh: {fileID: 0}
     m_MeshRenderer: {fileID: 0}
     m_SkinnedMeshRenderer: {fileID: 0}
-    m_Sprite: {fileID: 0}
+    m_Sprite: {fileID: 21300000, guid: bdb2ed39d41d542458e59dfc78f31639, type: 3}
     m_SpriteRenderer: {fileID: 0}
     m_UseMeshMaterialIndex: 0
     m_UseMeshColors: 1
@@ -973,10 +973,68 @@ ParticleSystem:
         m_PreInfinity: 2
         m_PostInfinity: 2
         m_RotationOrder: 4
-    m_BurstCount: 0
-    m_Bursts: []
+    m_BurstCount: 1
+    m_Bursts:
+    - serializedVersion: 2
+      time: 0
+      countCurve:
+        serializedVersion: 2
+        minMaxState: 0
+        scalar: 30
+        minScalar: 30
+        maxCurve:
+          serializedVersion: 2
+          m_Curve:
+          - serializedVersion: 3
+            time: 0
+            value: 1
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0.33333334
+            outWeight: 0.33333334
+          - serializedVersion: 3
+            time: 1
+            value: 1
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0.33333334
+            outWeight: 0.33333334
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        minCurve:
+          serializedVersion: 2
+          m_Curve:
+          - serializedVersion: 3
+            time: 0
+            value: 1
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0.33333334
+            outWeight: 0.33333334
+          - serializedVersion: 3
+            time: 1
+            value: 1
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0.33333334
+            outWeight: 0.33333334
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+      cycleCount: 1
+      repeatInterval: 0.01
+      probability: 1
   SizeModule:
-    enabled: 0
+    enabled: 1
     curve:
       serializedVersion: 2
       minMaxState: 1
@@ -987,22 +1045,22 @@ ParticleSystem:
         m_Curve:
         - serializedVersion: 3
           time: 0
-          value: 0
+          value: 0.8135586
           inSlope: 0
-          outSlope: 1
-          tangentMode: 0
-          weightedMode: 0
-          inWeight: 0.33333334
-          outWeight: 0.33333334
-        - serializedVersion: 3
-          time: 1
-          value: 1
-          inSlope: 1
           outSlope: 0
           tangentMode: 0
           weightedMode: 0
-          inWeight: 0.33333334
-          outWeight: 0.33333334
+          inWeight: 0
+          outWeight: 0
+        - serializedVersion: 3
+          time: 1
+          value: 0
+          inSlope: -2
+          outSlope: -2
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
         m_PreInfinity: 2
         m_PostInfinity: 2
         m_RotationOrder: 4
@@ -1300,7 +1358,7 @@ ParticleSystem:
         m_RotationOrder: 4
     separateAxes: 0
   ColorModule:
-    enabled: 1
+    enabled: 0
     gradient:
       serializedVersion: 2
       minMaxState: 1
@@ -4777,7 +4835,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: 12b32061885550b44a754c86c64bf51d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4797,10 +4855,10 @@ ParticleSystemRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_RenderMode: 0
   m_MeshDistribution: 0
-  m_SortMode: 0
+  m_SortMode: 3
   m_MinParticleSize: 0.07
   m_MaxParticleSize: 0.1
   m_CameraVelocityScale: 0
@@ -4840,7 +4898,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1869479448963572563}
   - component: {fileID: 2823134255146576739}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: IK_LeftEar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4906,7 +4964,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2755762771993116931}
   - component: {fileID: 6543075550465230130}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LeftEye
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4988,7 +5046,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5710775159314908908}
   - component: {fileID: 3445587227284085061}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: IK_LeftLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5052,7 +5110,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4330731834788842126}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LowerR_Leg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5083,7 +5141,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7330291770585453089}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: UpperR_Leg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5115,7 +5173,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5814860465127392325}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Left_Hand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5146,7 +5204,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2474153372209145741}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Tail_Third
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5244,7 +5302,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6527895988035518459}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LowerR_Arm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5259,7 +5317,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2320196478229328723}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.0000026687471, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0.00000094586835, w: 1}
   m_LocalPosition: {x: 0.6676246, y: -0.000000271346, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -5276,7 +5334,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6995667185089231325}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: InverseL_Knee
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5308,7 +5366,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1554311233202683560}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Lower_Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5344,7 +5402,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8777452899453909896}
   - component: {fileID: 909422452689996357}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RightEye
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5425,7 +5483,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7777907833539295065}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: IK_LeftEar_Target
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5447,6 +5505,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1869479448963572563}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &3158917699680959730
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7384906659458955218}
+  m_Layer: 9
+  m_Name: CeilingCheck
+  m_TagString: GroundCheck
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7384906659458955218
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3158917699680959730}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: 0.029231006, w: 0.9995727}
+  m_LocalPosition: {x: -0.52, y: 2.83, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4240884822766087074}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 3.35}
 --- !u!1 &3355186835768952830
 GameObject:
   m_ObjectHideFlags: 0
@@ -5456,7 +5545,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3143031745955512511}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: IK_LeftLeg_Target
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5487,7 +5576,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7005323811745931550}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Right_Hand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5502,7 +5591,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3385558391944488908}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0.17521444, w: 0.9845303}
+  m_LocalRotation: {x: -0, y: -0, z: -0.22384456, w: 0.9746249}
   m_LocalPosition: {x: 0.38894656, y: -0.00000021388252, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -5518,7 +5607,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7377171630303247278}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Tail_Second
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5551,7 +5640,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6143142257481293396}
   - component: {fileID: 5747462772337190957}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: IK_RightLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5623,7 +5712,7 @@ GameObject:
   - component: {fileID: 3693220445650813015}
   - component: {fileID: 9127739888775837190}
   - component: {fileID: 3353947549792020495}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -5644,6 +5733,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4601298780232207553}
+  - {fileID: 7384906659458955218}
   - {fileID: 461899473869107415}
   - {fileID: 33540612779201078}
   - {fileID: 1743077064231521814}
@@ -5694,11 +5784,11 @@ MonoBehaviour:
   maxRunSpeed: 10
   runDeceleration: 10
   runAcceleration: 10
-  wallRunJumpForce: 7
+  wallRunJumpForce: 5
   jumpForce: 5
   maxJumpTime: 0.1
-  wallJumpForceX: 6
-  wallJumpForceY: 6
+  wallJumpForceX: 5
+  wallJumpForceY: 7
   jumpGravityMult: 2
   fallGravityMult: 4
   maxFallSpeed: -10
@@ -5714,7 +5804,7 @@ MonoBehaviour:
   gravityScale: -2
   flySpeed: 7
   maxFlySpeed: 7
-  upwardFlySpeed: 2
+  upwardFlySpeed: 8
   downwardFlySpeed: -2
   groundLayer:
     serializedVersion: 2
@@ -5722,17 +5812,17 @@ MonoBehaviour:
   groundCheck: {fileID: 4601298780232207553}
   wallCheck: {fileID: 461899473869107415}
   backWallCheck: {fileID: 33540612779201078}
-  ceilingCheck: {fileID: 0}
+  ceilingCheck: {fileID: 7384906659458955218}
   wallCheckDistance: 0.2
   groundCheckDistance: 0.1
   ceilingCheckDistance: 0.2
   rayCastBuffer: 0.1
   hazardLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 256
   enemyLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   enemyCheckDistance: 0.01
   defaultAnimator: {fileID: 9100000, guid: 2c7f9f624ac06ce4c87c5381b8b35578, type: 2}
   eagleAnimator: {fileID: 9100000, guid: e6d5d1bb2f307e745b018342bb21a11f, type: 2}
@@ -5763,6 +5853,7 @@ MonoBehaviour:
   jumpHeld: 0
   hasReleasedJump: 0
   isKnockedBack: 0
+  isStunned: 0
   jumpHeldCounter: 0
   wallJumpLockCounter: 0
   knockbackLockCounter: 0
@@ -5826,7 +5917,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   maxHealth: 100
-  currentHealth: 0
+  currentHealth: 100
   energy: {fileID: 0}
   checkpointManager: {fileID: 0}
 --- !u!114 &3693220445650813015
@@ -5843,7 +5934,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   energyBar: {fileID: 0}
   maxEnergy: 100
-  currentEnergy: 0
+  currentEnergy: 100
 --- !u!114 &9127739888775837190
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5856,7 +5947,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98ef6604df684d146b8134e522e7d848, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controller: {fileID: 0}
+  controller: {fileID: 8740783585930017186}
 --- !u!70 &3353947549792020495
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -5901,7 +5992,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4566609117892401254}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: IK_RightArm_Target
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5917,7 +6008,7 @@ Transform:
   m_GameObject: {fileID: 3912151503518897333}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0.96822107, w: 0.25009608}
-  m_LocalPosition: {x: 0.27137387, y: 0.15703027, z: 0}
+  m_LocalPosition: {x: 0.3578608, y: 0.0705442, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5932,7 +6023,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4732703709629913481}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: MidR_Ear
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5964,7 +6055,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4047524849122646736}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: IK_RightEar_Target
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5995,7 +6086,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4601298780232207553}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: GroundCheck
   m_TagString: GroundCheck
   m_Icon: {fileID: 0}
@@ -6011,7 +6102,7 @@ Transform:
   m_GameObject: {fileID: 4242243311784069131}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.029231006, w: 0.9995727}
-  m_LocalPosition: {x: -0.52, y: -1.7, z: 0}
+  m_LocalPosition: {x: -0.52, y: -2.02, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6026,7 +6117,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5887887375443519205}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LowerL_Leg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6058,7 +6149,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1136618355327421600}
   - component: {fileID: 9064648705240553617}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: IK_RightArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6123,7 +6214,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8081655535448161094}
   - component: {fileID: 8401748961229253336}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: IK_RightEar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6191,7 +6282,7 @@ GameObject:
   - component: {fileID: 1957774791882037701}
   - component: {fileID: 3456801807479779297}
   - component: {fileID: 7114475188238090422}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: PucaRig
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -6359,7 +6450,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6073259799753270445}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Tail_Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6391,7 +6482,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 45043846976977717}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: IK_LeftArm_Target
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6422,7 +6513,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7007694513332514644}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LowerL_Arm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6454,7 +6545,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8083857677039063126}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6489,7 +6580,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 33540612779201078}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: BackWallCheck
   m_TagString: WallCheck
   m_Icon: {fileID: 0}
@@ -6520,7 +6611,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4094313370671894877}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Mid_Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6552,7 +6643,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6221432963097774640}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: IK_Solvers
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6590,7 +6681,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5197146154583905146}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: UpperR_Arm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6605,7 +6696,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6437220600689733372}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: -0.9530474, w: -0.3028212}
+  m_LocalRotation: {x: 0, y: 0, z: -0.96689814, w: -0.25516272}
   m_LocalPosition: {x: 0.40341008, y: 0.31478918, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -6623,7 +6714,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4012041583507605099}
   - component: {fileID: 5177217709399598989}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: IK_LeftArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6687,7 +6778,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7214282245654017986}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: InverseR_Knee
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6720,7 +6811,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6156465850595270982}
   - component: {fileID: 3675072856540210778}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: IK_Tail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6795,7 +6886,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 461899473869107415}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WallCheck
   m_TagString: WallCheck
   m_Icon: {fileID: 0}
@@ -6826,7 +6917,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3346947327001085072}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Tail_Fourth
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6858,7 +6949,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3731445009094360385}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: UpperL_Arm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6890,7 +6981,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3948102743735098246}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: UpperR_Ear
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6921,7 +7012,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8754808779395693768}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Tail_Fifth
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6953,7 +7044,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3952378956191481367}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Tail_End
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6984,7 +7075,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3632129232746939171}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: UpperL_Ear
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7015,7 +7106,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3576322185103239318}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LowerR_Ear
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7047,7 +7138,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5081549990416198455}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: MidL_Ear
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7079,7 +7170,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1855598710824377319}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: IK_RightLeg_Target
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7110,7 +7201,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 147577372894694011}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: IK_Tail_Target
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7141,7 +7232,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8356589804261226676}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LowerL_Ear
   m_TagString: Untagged
   m_Icon: {fileID: 0}
