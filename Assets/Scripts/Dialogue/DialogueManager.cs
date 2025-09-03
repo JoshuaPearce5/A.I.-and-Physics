@@ -51,7 +51,7 @@ public class DialogueManager : MonoBehaviour
     private TextMeshProUGUI[] choicesText;
     */
 
-    [SerializeField] CharacterStateController controller;
+    [SerializeField] PlayerCharacterController controller;
 
     private Story currentStory;
 

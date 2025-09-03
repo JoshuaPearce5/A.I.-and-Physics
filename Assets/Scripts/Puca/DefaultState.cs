@@ -19,42 +19,12 @@ public class DefaultState : PlayerState
     }
     public override void UpdateState()
     {
-        if (controller.data.eagleFormUnlocked)
-        {
-            // Switches to the Eagle State
-            if (controller.data.isAirborne && !controller.data.isTouchingWall && Input.GetButton("Fly") && controller.energy.currentEnergy > 0f)
-            {
-                controller.SwitchState(controller.eagleState);
-                return;
-            }
-        }
-        if (controller.data.foxFormUnlocked)
-        {
-            // Switches to the Fox State
-            if (controller.data.isGrounded && Input.GetButton("Sneak") && controller.energy.currentEnergy > 0f)
-            {
-                controller.SwitchState(controller.foxState);
-                return;
-            }
-        }
-        if (controller.data.boarFormUnlocked)
-        {
-            // Switches to the Boar State
-            if (Input.GetButton("Charge") && controller.energy.currentEnergy > 0f)
-            {
-                controller.SwitchState(controller.boarState);
-                return;
-            }
-        }
-
         // Runs all custom functions for this State
         HandleWallJumpLock();
         HandleMovementInput();
         HandleFacingDirection();
         HandleJumpInput();
         RegenerateEnergy();
-
-
     }
 
     public override void FixedUpdateState()
@@ -63,6 +33,7 @@ public class DefaultState : PlayerState
         ApplyMovement();
         ApplyGravity();
     }
+
     public void ApplyMovement()
 {
     // Handles movement physics
@@ -73,8 +44,8 @@ public class DefaultState : PlayerState
     {
         controller.data.doubleJumpControlCounter -= Time.fixedDeltaTime;
     }
-    // If wallJumpLockCounter has hit 0 and player isn't touching a wall
-    if (controller.data.wallJumpLockCounter <= 0f && !controller.data.isTouchingWall)
+    // If wallJumpLockCounter has hit 0 and player isn't Facing a wall
+    if (controller.data.wallJumpLockCounter <= 0f && !controller.data.isFacingWall)
     {
         // If player is moving horizontally
         if (controller.data.moveDirection != 0)
@@ -113,7 +84,7 @@ public class DefaultState : PlayerState
                 velocity.x = controller.data.moveDirection * controller.data.moveSpeed;
             }
         }
-        // If the player is not moving horizontally and is not touching the ground
+        // If the player is not moving horizontally and is not Facing the ground
         else if (controller.data.moveDirection == 0 && controller.data.isAirborne)
         {
             // Target X-axis velocity should be 0 if input is not being pressed
@@ -121,7 +92,7 @@ public class DefaultState : PlayerState
             // Interpolate between current velocity x and zero to slow player based on slowSpeed factor
             velocity.x = Mathf.Lerp(velocity.x, targetVelocityX, controller.data.slowSpeed * Time.fixedDeltaTime);
         }
-        // If the player is not moving horizontally and is touching the ground
+        // If the player is not moving horizontally and is Facing the ground
         else if (controller.data.moveDirection == 0 && !controller.data.isAirborne)
         {
             // Target X-axis velocity should be 0 if input is not being pressed
@@ -201,6 +172,7 @@ public class DefaultState : PlayerState
         if (Input.GetButtonDown("Jump"))
         {
             controller.data.jumpPressed = true;
+            ExecuteJump();
         }
 
         if (Input.GetButtonUp("Jump"))
@@ -226,9 +198,9 @@ public class DefaultState : PlayerState
         // Player is grounded
         if (controller.data.isGrounded)
         {
-            if (controller.data.isTouchingWall)
+            if (controller.data.isFacingWall)
             {
-                // Grounded and touching a wall — perform a wall run
+                // Grounded and Facing a wall — perform a wall run
                 WallRun();
                 SoundFXManager.instance.PlayRandomPitchPlayerSoundFXClip(controller.data.jumpSoundClip, 1f);
             }
@@ -238,8 +210,8 @@ public class DefaultState : PlayerState
                 Jump();
             }
         }
-        // Wall jump: airborne but touching wall
-        else if (controller.data.isTouchingWall && controller.data.isAirborne)
+        // Wall jump: airborne but Facing wall
+        else if (controller.data.isFacingWall && controller.data.isAirborne)
         {
             SoundFXManager.instance.PlayRandomPitchPlayerSoundFXClip(controller.data.doubleJumpSoundClip, 1f);
             WallJump();
@@ -253,6 +225,7 @@ public class DefaultState : PlayerState
     }
     public void Jump()
     {
+        Debug.Log("Jump!");
         // Player is performing a jump
         controller.data.isJumping = true;
 
@@ -268,6 +241,7 @@ public class DefaultState : PlayerState
 
     public void WallJump()
     {
+        Debug.Log("WallJump!");
         // Player is jumping
         controller.data.isJumping = true;
 
@@ -286,6 +260,7 @@ public class DefaultState : PlayerState
 
     public void WallRun()
     {
+        Debug.Log("Wall Run!");
         // Player is performing a jump
         controller.data.isJumping = true;
 
@@ -301,6 +276,7 @@ public class DefaultState : PlayerState
 
     public void DoubleJump()
     {
+        Debug.Log("Double Jump!");
         // Player is performing a jump
         controller.data.isDoubleJumping = true;
 

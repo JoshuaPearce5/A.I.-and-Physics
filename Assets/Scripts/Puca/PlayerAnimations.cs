@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerAnimations : MonoBehaviour
 {
-    [SerializeField] CharacterStateController controller;
+    [SerializeField] PlayerCharacterController controller;
 
     private void Update()
     {
@@ -17,7 +17,7 @@ public class PlayerAnimations : MonoBehaviour
         {
             // Handles animation transitions based on player logic booleans
             controller.animator.SetBool("isGrounded", controller.data.isGrounded);
-            controller.animator.SetBool("isFalling", !Input.GetButtonDown("Jump") && !controller.data.isGrounded);
+            controller.animator.SetBool("isFalling", !Input.GetButtonDown("Jump") && controller.data.rb.velocity.y <= 0f && !controller.data.isGrounded);
 
             if (!controller.data.controlsDisabled)
             {
