@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98469774c8f929d4982d2c83bee54487, type: 3}
+  m_Name: Banshee
+  m_EditorClassIdentifier: 
+  enemySprite: {fileID: 21300000, guid: aee956c7bee050a43af22eb281fa7301, type: 3}
+  gravityScale: 0
+  colliderSizeX: 0
+  colliderSizeY: 0
+  speed: 0
+  attackSound: {fileID: 0}
+  hurtSound: []

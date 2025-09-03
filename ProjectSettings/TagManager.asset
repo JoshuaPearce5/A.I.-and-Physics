@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - GroundCheck
+  - WallCheck
+  - EnemyEdge
+  - EnemyTop
+  - Wall
+  - Ground
+  - Enemy
+  - PauseMenu
+  - HealthBarRect
+  - HealthBarText
+  - EnergyBarRect
+  - EnergyBarText
+  - CheckpointManager
+  - HiddenWall
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - Ground
+  - Water
+  - UI
+  - Enemy
+  - InvisibleWall
+  - Hazard
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: UI
+    uniqueID: 1455440207
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0

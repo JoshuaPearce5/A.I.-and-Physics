@@ -1,0 +1,466 @@
+fileFormatVersion: 2
+guid: 606e7a192e554df4ca57af44d7eb7801
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 625
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PucaLC_TileMap_Cave_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1875
+        width: 625
+        height: 625
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6108c78beca1dd941801a371bb1e881d
+      internalID: -96600602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PucaLC_TileMap_Cave_1
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 1875
+        width: 625
+        height: 625
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 332510bdc86d9164087824f373157fcd
+      internalID: 883313892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PucaLC_TileMap_Cave_2
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 1875
+        width: 625
+        height: 625
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bdcb1df88268154d92b68cac9c8c040
+      internalID: 1293616388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PucaLC_TileMap_Cave_3
+      rect:
+        serializedVersion: 2
+        x: 1875
+        y: 1875
+        width: 625
+        height: 625
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45aa39e84ca09af4aa2af95b007dd826
+      internalID: 33959970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PucaLC_TileMap_Cave_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1250
+        width: 625
+        height: 625
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a5622507ef7fd64594766a187ffeaff
+      internalID: 754464349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PucaLC_TileMap_Cave_5
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 1250
+        width: 625
+        height: 625
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2745727a4917807488ceb30589d791c0
+      internalID: 353231726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PucaLC_TileMap_Cave_6
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 1250
+        width: 625
+        height: 625
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2533fd911af464145ab0e02ee3be418e
+      internalID: -832387300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PucaLC_TileMap_Cave_7
+      rect:
+        serializedVersion: 2
+        x: 1875
+        y: 1250
+        width: 625
+        height: 625
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f51560940901094ebe9e8ccb3b3eaea
+      internalID: 1621900029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PucaLC_TileMap_Cave_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 625
+        width: 625
+        height: 625
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afcc10954d6dede44873a45933113d5c
+      internalID: 329534097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PucaLC_TileMap_Cave_9
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 625
+        width: 625
+        height: 625
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10913176077e50b429e2b5061eb075b1
+      internalID: -1377070546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PucaLC_TileMap_Cave_10
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 625
+        width: 625
+        height: 625
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a4e2c89921867146b552a898423a0fe
+      internalID: -1224112277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PucaLC_TileMap_Cave_11
+      rect:
+        serializedVersion: 2
+        x: 1875
+        y: 625
+        width: 625
+        height: 625
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34dea1781dee10c4087d81ea2bfebf23
+      internalID: -1032849004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PucaLC_TileMap_Cave_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 625
+        height: 625
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5e313dd9b342644d8717f9634ae5e6c
+      internalID: -1828545499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PucaLC_TileMap_Cave_13
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 0
+        width: 625
+        height: 625
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92b58bf0891d7ea4a969144988d2b959
+      internalID: 37277471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PucaLC_TileMap_Cave_14
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 0
+        width: 625
+        height: 625
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97702901846b18a40b48ea91bb79d974
+      internalID: 799109342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PucaLC_TileMap_Cave_15
+      rect:
+        serializedVersion: 2
+        x: 1875
+        y: 0
+        width: 625
+        height: 625
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7396e2ea4dec46a4980a2d7a806fcf11
+      internalID: 936033370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      PucaLC_TileMap_Cave_0: -96600602
+      PucaLC_TileMap_Cave_1: 883313892
+      PucaLC_TileMap_Cave_10: -1224112277
+      PucaLC_TileMap_Cave_11: -1032849004
+      PucaLC_TileMap_Cave_12: -1828545499
+      PucaLC_TileMap_Cave_13: 37277471
+      PucaLC_TileMap_Cave_14: 799109342
+      PucaLC_TileMap_Cave_15: 936033370
+      PucaLC_TileMap_Cave_2: 1293616388
+      PucaLC_TileMap_Cave_3: 33959970
+      PucaLC_TileMap_Cave_4: 754464349
+      PucaLC_TileMap_Cave_5: 353231726
+      PucaLC_TileMap_Cave_6: -832387300
+      PucaLC_TileMap_Cave_7: 1621900029
+      PucaLC_TileMap_Cave_8: 329534097
+      PucaLC_TileMap_Cave_9: -1377070546
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

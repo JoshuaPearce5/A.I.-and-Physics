@@ -1,0 +1,466 @@
+fileFormatVersion: 2
+guid: 36236a2c7e2a8cd4a8151b81dc8fe038
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 625
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PucaLC_TileMap_Froest_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1875
+        width: 625
+        height: 625
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74413a5c0c5824a4eae76c7942d6cdb4
+      internalID: -1631090983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PucaLC_TileMap_Froest_1
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 1875
+        width: 625
+        height: 625
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88dd4877bc90b754e8a1bed62358c0c9
+      internalID: -223806329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PucaLC_TileMap_Froest_2
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 1875
+        width: 625
+        height: 625
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1658f3e0675b984b87472b697efa132
+      internalID: -1685630184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PucaLC_TileMap_Froest_3
+      rect:
+        serializedVersion: 2
+        x: 1875
+        y: 1875
+        width: 625
+        height: 625
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab86049f06eef4541942aa5f8c3ff9a4
+      internalID: -153660297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PucaLC_TileMap_Froest_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1250
+        width: 625
+        height: 625
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 471ffd8246bb63c458a7e83521666c89
+      internalID: 861195475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PucaLC_TileMap_Froest_5
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 1250
+        width: 625
+        height: 625
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7535885a1241be641bdbc9f5fcfca11e
+      internalID: -1470431208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PucaLC_TileMap_Froest_6
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 1250
+        width: 625
+        height: 625
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3bbb5d9c148c494e974409e8331bfb3
+      internalID: 108875499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PucaLC_TileMap_Froest_7
+      rect:
+        serializedVersion: 2
+        x: 1875
+        y: 1250
+        width: 625
+        height: 625
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c2a6e52daa4bf74fb6e589675341364
+      internalID: -1039528486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PucaLC_TileMap_Froest_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 625
+        width: 625
+        height: 625
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 189d3113ea887b643aad0023311243ba
+      internalID: -2007976185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PucaLC_TileMap_Froest_9
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 625
+        width: 625
+        height: 625
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ab8316f27e642245b8c0033d468d104
+      internalID: -2010036871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PucaLC_TileMap_Froest_10
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 625
+        width: 625
+        height: 625
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a02d579ac467cb43867db56b8fa5c51
+      internalID: -1840416282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PucaLC_TileMap_Froest_11
+      rect:
+        serializedVersion: 2
+        x: 1875
+        y: 625
+        width: 625
+        height: 625
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a6940af2561d15488dbfef2fe840840
+      internalID: 1097025461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PucaLC_TileMap_Froest_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 625
+        height: 625
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 378022f2afdc08b4cb05344b068cb08a
+      internalID: 206847633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PucaLC_TileMap_Froest_13
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 0
+        width: 625
+        height: 625
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7b173ec805c46a4a9785869eea06c0a
+      internalID: -1232261978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PucaLC_TileMap_Froest_14
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 0
+        width: 625
+        height: 625
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 925866e5819061440b004c3ed8b25230
+      internalID: 2046067272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PucaLC_TileMap_Froest_15
+      rect:
+        serializedVersion: 2
+        x: 1875
+        y: 0
+        width: 625
+        height: 625
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f877280626d14e4d9f25d12cded42fc
+      internalID: 1301216071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      PucaLC_TileMap_Froest_0: -1631090983
+      PucaLC_TileMap_Froest_1: -223806329
+      PucaLC_TileMap_Froest_10: -1840416282
+      PucaLC_TileMap_Froest_11: 1097025461
+      PucaLC_TileMap_Froest_12: 206847633
+      PucaLC_TileMap_Froest_13: -1232261978
+      PucaLC_TileMap_Froest_14: 2046067272
+      PucaLC_TileMap_Froest_15: 1301216071
+      PucaLC_TileMap_Froest_2: -1685630184
+      PucaLC_TileMap_Froest_3: -153660297
+      PucaLC_TileMap_Froest_4: 861195475
+      PucaLC_TileMap_Froest_5: -1470431208
+      PucaLC_TileMap_Froest_6: 108875499
+      PucaLC_TileMap_Froest_7: -1039528486
+      PucaLC_TileMap_Froest_8: -2007976185
+      PucaLC_TileMap_Froest_9: -2010036871
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
